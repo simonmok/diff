@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Diff Tool</title>
+		<script type="text/javascript" src="diff.js"></script>
+		<link rel="stylesheet" type="text/css" href="diff.css"/>
+	</head>
+	<body>
+		<h1>Diff Tool</h1>
+		<div class="wrapper">
+			<div class="form">
+				<div class="left">
+					<label class="label" for="left">Left:</label>
+					<textarea id="left" cols="30" rows="10" autofocus></textarea>
+				</div>
+				<div class="right">
+					<label class="label" for="right">Right:</label>
+					<textarea id="right" cols="30" rows="10"></textarea>
+				</div>
+				<div class="check">
+					<input id="remove" type="checkbox"/>
+					<label class="check" for="remove">Ignore leading and trailing spaces</label>
+				</div>
+				<div class="action">
+					<input type="button" class="compare" value="Compare" id="compare"/>
+				</div>
+			</div>
+			<table class="hide">
+				<thead>
+					<tr>
+						<th colspan="3">Output</th>
+					</tr>
+				</thead>
+				<tbody id="result"></tbody>
+			</table>
+		</div>
+	</body>
+</html>
